@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Törnüklü Şeyh İbrahim Efendi'nin hayatı, tasavvufî kişiliği, Âşık Ruhsatî ile ilişkisi ve Sivas kültüründeki yeri."
+  >
+
+  <title>Törnüklü Şeyh İbrahim Efendi | Hayatı</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+
+<meta name="theme-color" content="#18392b">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --green: #18392b;
+      --green-dark: #10271e;
+      --gold: #b79a63;
+      --gold-light: #c9ad76;
+      --cream: #f8f6f2;
+      --text: #1f1f1f;
+      --muted: #706b63;
+      --line: #e6ded0;
+      --white: #ffffff;
+      --header-height: 96px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin-inline: auto;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(248, 246, 242, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(183, 154, 99, 0.22);
+    }
+
+    .nav {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .logo img {
+      width: auto;
+      height: 76px;
+      max-width: 225px;
+      object-fit: contain;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #3d3a35;
+    }
+
+    .menu a {
+      position: relative;
+      white-space: nowrap;
+      transition: color .25s ease;
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width .25s ease;
+    }
+
+    .menu a:hover {
+      color: var(--gold);
+    }
+
+    .menu a:hover::after {
+      width: 100%;
+    }
+
+    .mobile-menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: transparent;
+      color: var(--green);
+      cursor: pointer;
+    }
+
+    .mobile-menu-button span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin: 4px auto;
+      border-radius: 10px;
+      background: currentColor;
+    }
+
+    .page-hero {
+      padding: calc(var(--header-height) + 92px) 0 92px;
+      background:
+        linear-gradient(rgba(16, 39, 30, .80), rgba(16, 39, 30, .88)),
+        linear-gradient(135deg,#10271e,#234b39);
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: "Cormorant Garamond", serif;
+      line-height: 1.12;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 86px);
+      margin-bottom: 20px;
+    }
+
+    .page-hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.84);
+      font-size: 18px;
+    }
+
+    .breadcrumbs {
+      margin-top: 28px;
+      font-size: 14px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .breadcrumbs a {
+      color: var(--gold-light);
+    }
+
+    main {
+      padding: 90px 0 110px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 56px;
+      align-items: start;
+      margin-bottom: 76px;
+    }
+
+    .intro-copy h2 {
+      font-size: clamp(38px, 5vw, 60px);
+      color: var(--green);
+      margin-bottom: 24px;
+    }
+
+    .intro-copy p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .fact {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+    }
+
+    .fact small {
+      display: block;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .fact strong {
+      color: var(--green);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 58px;
+      align-items: start;
+    }
+
+    .article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 54px;
+    }
+
+    .article section {
+      padding: 0;
+      margin-bottom: 52px;
+    }
+
+    .article section:last-child {
+      margin-bottom: 0;
+    }
+
+    .article h2 {
+      color: var(--green);
+      font-size: clamp(34px, 4vw, 50px);
+      margin-bottom: 20px;
+    }
+
+    .article h3 {
+      color: var(--green);
+      font-size: 30px;
+      margin: 28px 0 14px;
+    }
+
+    .article p {
+      color: #4e4a44;
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
+    .quote-box {
+      margin: 30px 0;
+      padding: 28px 30px;
+      border-left: 4px solid var(--gold);
+      background: #fffaf0;
+      border-radius: 0 18px 18px 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      color: var(--green);
+    }
+
+    .lineage {
+      margin: 28px 0;
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: var(--cream);
+      border-radius: 18px;
+      color: var(--green);
+      font-weight: 600;
+      text-align: center;
+      line-height: 2;
+    }
+
+    .note {
+      margin-top: 28px;
+      padding: 24px 26px;
+      border: 1px solid rgba(183,154,99,.45);
+      background: rgba(183,154,99,.08);
+      border-radius: 18px;
+      color: #5d513e;
+    }
+
+    .source-list {
+      padding-left: 22px;
+      color: #4e4a44;
+    }
+
+    .source-list li {
+      margin-bottom: 10px;
+    }
+
+    .toc {
+      position: sticky;
+      top: calc(var(--header-height) + 24px);
+      padding: 28px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+    }
+
+    .toc h3 {
+      color: var(--green);
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .toc a {
+      display: block;
+      color: var(--muted);
+      padding: 9px 0;
+      border-bottom: 1px solid #eee8df;
+      font-size: 14px;
+    }
+
+    .toc a:last-child {
+      border-bottom: 0;
+    }
+
+    .toc a:hover {
+      color: var(--gold);
+    }
+
+    .back-home {
+      display: inline-flex;
+      margin-top: 24px;
+      color: var(--green);
+      font-weight: 700;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 4px;
+    }
+
+    footer {
+      padding: 70px 0 30px;
+      background: #0d1f18;
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    footer h4 {
+      margin-bottom: 18px;
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    footer p, footer a {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.55);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .content-layout,
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+        order: -1;
+      }
+    }
+
+    @media (max-width: 860px) {
+      :root {
+        --header-height: 82px;
+      }
+
+      .logo img {
+        height: 62px;
+        max-width: 180px;
+      }
+
+      .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 18px 4% 24px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: rgba(248, 246, 242, .99);
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .menu a {
+        width: 100%;
+        padding: 12px 0;
+      }
+
+      .menu a::after {
+        display: none;
+      }
+
+      .mobile-menu-button {
+        display: block;
+      }
+
+      .article {
+        padding: 36px 28px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .logo img {
+        height: 56px;
+        max-width: 155px;
+      }
+
+      .fact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-hero {
+        padding-top: calc(var(--header-height) + 70px);
+      }
+
+      .article {
+        padding: 30px 22px;
+      }
+
+      .quote-box {
+        font-size: 24px;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="refinements.css"></head>
+
+<body><a class="skip-link" href="#main">İçeriğe geç</a>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo" aria-label="Törnüklü İbrahim Efendi Vakfı ana sayfa">
+        <img src="logo.svg" alt="Törnüklü İbrahim Efendi Vakfı logosu">
+      </a>
+
+      <nav class="menu" id="mainMenu" aria-label="Ana menü">
+        <a href="hayat.html">Törnüklü İbrahim Efendi</a>
+        <a href="index.html#vakif">Vakfımız</a>
+        <a href="index.html#faaliyetler">Faaliyetler</a>
+        <a href="index.html#galeri">Galeri</a>
+        <a href="index.html#bagis">Bağış</a>
+        <a href="index.html#iletisim">İletişim</a>
+      </nav>
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="Menüyü aç"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Sivas Yerel Tarihi ve Tasavvuf Geleneği</div>
+      <h1>Törnüklü Şeyh İbrahim Efendi</h1>
+      <p>Hayatı, tasavvufî kişiliği ve Sivas kültüründeki yeri</p>
+      <div class="breadcrumbs">
+        <a href="index.html">Ana Sayfa</a> · Törnüklü Şeyh İbrahim Efendi
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <h2>Törnüklü Şeyh İbrahim Efendi kimdir?</h2>
+          <p>
+            Törnüklü Şeyh İbrahim Efendi, 19. yüzyılda Sivas ve çevresinde yaşamış,
+            Nakşibendî-Hâlidî tasavvuf geleneğine mensup bir gönül ve irfan insanıdır.
+            Kaynaklarda doğum tarihi Hicrî 1242 olarak belirtilir. Bu tarih miladî
+            takvime çevrildiğinde 1826-1827 yıllarına karşılık gelmektedir.
+          </p>
+          <p>
+            Sivas Merkeze bağlı Törnük, bugünkü adıyla Gözeli köyünde doğduğu
+            kabul edilmektedir.
+          </p>
+        </div>
+
+        <div class="fact-grid">
+          <div class="fact">
+            <small>Doğum Yeri</small>
+            <strong>Sivas Merkez Törnük, bugünkü adıyla Gözeli köyü</strong>
+          </div>
+
+          <div class="fact">
+            <small>Tasavvuf Yolu</small>
+            <strong>Nakşibendî-Hâlidî geleneği</strong>
+          </div>
+
+          <div class="fact">
+            <small>Öne Çıkan Yönü</small>
+            <strong>Âşık Ruhsatî’ye “Ruhsatî” mahlasını verdiği kabul edilir</strong>
+          </div>
+
+          <div class="fact">
+            <small>Kabri</small>
+            <strong>Törnük/Gözeli köyü mezarlığı</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-layout">
+        <article class="article">
+          <section id="hayati">
+            <h2>Hayatı</h2>
+            <p>
+              İbrahim Efendi, hayatının büyük bölümünü Törnük köyünde geçirmiş;
+              geçimini rençperlik ve çiftçilik yaparak sağlamıştır. Gençlik yıllarında
+              çobanlık yaptığı da aktarılmaktadır. Medrese veya şehir hayatından ziyade
+              köyde sade bir ömür sürmüş; buna karşılık Sivas çevresinde manevî
+              kişiliğiyle tanınmıştır.
+            </p>
+            <p>
+              Kaynaklardaki anlatıma göre gençlik yıllarında Zaralı Şeyh Şakir Efendi
+              ile tanışmış ve onun manevî terbiyesine girmiştir. Böylece Erzincanlı
+              Terzi Baba - Muhammed Vehbî Hayyâtî üzerinden gelen Nakşibendî-Hâlidî
+              yolunun Sivas’taki temsilcilerinden biri olmuştur.
+            </p>
+
+            <div class="lineage">
+              Terzi Baba → Şeyh Şakir Efendi → Törnüklü İbrahim Efendi → Salih Efendi
+            </div>
+
+            <p>
+              Bu silsilenin, İbrahim Efendi’nin oğlu Salih Efendi’nin 1956 yılındaki
+              vefatıyla sona erdiği belirtilmektedir.
+            </p>
+          </section>
+
+          <section id="ruhsati">
+            <h2>Âşık Ruhsatî ile İlişkisi</h2>
+            <p>
+              Törnüklü İbrahim Efendi’nin kültür tarihimiz bakımından en dikkat çekici
+              yönü, ünlü halk ozanı Âşık Ruhsatî’ye “Ruhsatî” mahlasını veren kişi
+              olarak kabul edilmesidir.
+            </p>
+            <p>
+              Anlatıya göre asıl adı Mustafa olan Ruhsatî, manevî bir arayış içinde
+              Şeyh Şakir Efendi’ye müracaat etmiş; Şeyh Şakir Efendi de onu Törnüklü
+              İbrahim Efendi’ye yönlendirmiştir. İbrahim Efendi, Mustafa’nın gördüğü
+              rüyayı yorumlamış ve ona şiirlerinde “Ruhsatî” mahlasını kullanması için
+              ruhsat verildiğini söylemiştir. Ozanın bundan sonra Ruhsatî mahlasını
+              kullandığı aktarılmaktadır.
+            </p>
+
+            <div class="quote-box">
+              “Sana ruhsat verilmiş; bundan sonra şiirlerinde Ruhsatî mahlasını kullan.”<small>Yerel anlatıda aktarılan ifade.</small>
+            </div>
+          </section>
+
+          <section id="sahsiyetler">
+            <h2>Çevresindeki Önemli Şahsiyetler</h2>
+            <p>
+              İbrahim Efendi’nin Sivas ve çevresindeki tasavvuf ve ilim insanlarından
+              Mor Ali Baba, Şeyh Şakir Efendi, Kazancızâde Emin Edip Efendi,
+              Fertellili Yemen Baba ve İzzet Hoca Göze gibi isimlerle görüştüğü ve
+              sohbetlerde bulunduğu aktarılmaktadır.
+            </p>
+            <p>
+              Özellikle Fertellili Yemen Baba ile arasındaki dostluk hakkında halk
+              arasında çeşitli menkıbeler anlatılmaktadır. Bu rivayetlerin tarihî belge
+              niteliğinden ziyade yerel sözlü kültür ve menkıbe geleneğinin parçaları
+              olarak değerlendirilmesi daha doğru olacaktır.
+            </p>
+          </section>
+
+          <section id="hac-ve-aile">
+            <h2>Hac Yolculuğu ve Ailesi</h2>
+            <p>
+              Yerel kaynaklara göre İbrahim Efendi, 1903 yılında Şeyh Şakir Efendi’nin
+              oğlu Hacı Necmettin Efendi ile İstanbul üzerinden deniz yoluyla Hacca
+              gitmiştir. Bu seyahat sırasında Sultan II. Abdülhamid ile görüştüğü de
+              anlatılmaktadır. Ancak bu görüşme bilgisi daha çok yerel derlemelere ve
+              aile anlatılarına dayanmaktadır.
+            </p>
+            <p>
+              Salih, Musa ve Ahmet isimlerinde üç oğlu olduğu; Musa ve Ahmet’in savaş
+              yıllarında hayatını kaybettiği, ailesinin ve manevî silsilesinin ise
+              Salih Efendi üzerinden devam ettiği belirtilmektedir. Salih Efendi’nin
+              kabri Sivas’taki Halfelik Mezarlığı’ndadır.
+            </p>
+          </section>
+
+          <section id="vefat">
+            <h2>Vefatı ve Kabri</h2>
+            <p>
+              Kaynakların çoğunda Törnüklü İbrahim Efendi’nin 1911 yılında Törnük
+              köyünde vefat ettiği ve köy mezarlığına defnedildiği belirtilmektedir.
+              Günümüzde kabri Törnük/Gözeli köyünde ziyaret edilmektedir.
+            </p>
+            <p>
+              Bununla birlikte bazı akademik çalışmalarda vefat tarihi Hicrî 1327 /
+              Miladî 1909 olarak kaydedilmiştir. Dolayısıyla kaynaklar arasında iki
+              yıllık bir tarih farklılığı bulunmaktadır. Yerel hafıza, anma programları
+              ve biyografik derlemelerde 1911 tarihi daha yaygın biçimde kabul
+              edilmektedir.
+            </p>
+          </section>
+
+          <section id="degerlendirme">
+            <h2>Kısa Değerlendirme</h2>
+            <p>
+              Törnüklü Şeyh İbrahim Efendi; köyünde çiftçilik yapan mütevazı bir
+              Anadolu insanı, Terzi Baba ve Şeyh Şakir Efendi çizgisindeki
+              Nakşibendî-Hâlidî geleneğin Sivas’taki temsilcilerinden biri, Âşık
+              Ruhsatî’ye mahlasını veren manevî rehber ve Sivas halk kültüründe
+              menkıbeleriyle yaşayan bir gönül insanıdır.
+            </p>
+
+            <div class="note">
+              <strong>Not:</strong> Hakkındaki bilgilerin bir kısmı akademik tasavvuf
+              ve halk edebiyatı çalışmalarına, önemli bir kısmı ise aile anlatılarına,
+              yerel araştırmalara ve sözlü kültüre dayanmaktadır.
+            </div>
+          </section>
+
+          <section id="kaynaklar">
+            <h2>Kaynaklar</h2><p class="source-note">Vakıf tarafından paylaşılan biyografi derlemesinde adı geçen çalışmalar aşağıdadır. Metin, yerel anlatıları ve kaynaklar arasındaki tarih farklılıklarını birlikte aktarır.</p>
+            <ul class="source-list">
+              <li>Doğan Kaya, “Terzi Baba ve Sivas”</li>
+              
+              <li>Kutlu Özen, “Hızır Nebi Efsaneleri”</li>
+              <li>Murat Öz, “Sivas’ta Beş Türkmen Köyü” çalışması</li>
+            </ul>
+
+            <a href="index.html" class="back-home">← Ana sayfaya dön</a>
+          </section>
+        </article>
+
+        <aside class="toc" aria-label="Sayfa içeriği">
+          <h3>Sayfa İçeriği</h3>
+          <a href="#hayati">Hayatı</a>
+          <a href="#ruhsati">Âşık Ruhsatî ile İlişkisi</a>
+          <a href="#sahsiyetler">Önemli Şahsiyetler</a>
+          <a href="#hac-ve-aile">Hac Yolculuğu ve Ailesi</a>
+          <a href="#vefat">Vefatı ve Kabri</a>
+          <a href="#degerlendirme">Kısa Değerlendirme</a>
+          <a href="#kaynaklar">Kaynaklar</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="iletisim"><div class="container"><div class="footer-grid"><div><h4>Vakfımız</h4><p>Törnüklü İbrahim Efendi Vakfı</p><p>İlim, irfan, ahlak ve hizmet mirasını geleceğe taşımak için.</p></div><div><h4>Keşfedin</h4><a href="hayat.html">Törnüklü İbrahim Efendi</a><a href="index.html#vakif">Vakfımız</a><a href="index.html#faaliyetler">Faaliyetler</a></div><div><h4>Katılın</h4><a href="index.html#gonullu">Gönüllü olun</a><a href="index.html#bagis">Bağış ve destek</a></div><div><h4>İletişim</h4><p>Sivas / Türkiye</p><a href="tel:+905374886618">+90 537 488 66 18</a><a href="https://wa.me/905374886618" target="_blank" rel="noopener noreferrer">WhatsApp ile iletişime geçin ↗</a><a href="https://www.instagram.com/ibrahim.efendi.vakfi" target="_blank" rel="noopener noreferrer">Instagram · ibrahim.efendi.vakfi ↗</a></div></div><div class="copyright">© 2026 Törnüklü İbrahim Efendi Vakfı. Tüm hakları saklıdır.</div></div></footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>
+
