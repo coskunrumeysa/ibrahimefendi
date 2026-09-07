@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Törnüklü İbrahim Efendi Vakfı; hayır, yardımlaşma, dayanışma ve manevi mirası yaşatma amacıyla faaliyet göstermektedir."
+  >
+
+  <title>Fotoğraf kaynakları | Törnüklü İbrahim Efendi Vakfı</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="manifest" href="site.webmanifest">
+
+<meta name="theme-color" content="#18392b">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --green: #18392b;
+      --green-dark: #10271e;
+      --gold: #b79a63;
+      --gold-light: #c9ad76;
+      --cream: #f8f6f2;
+      --text: #1f1f1f;
+      --muted: #706b63;
+      --line: #e6ded0;
+      --white: #ffffff;
+      --header-height: 96px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin-inline: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(248, 246, 242, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid rgba(183, 154, 99, 0.22);
+    }
+
+    .nav {
+      min-height: var(--header-height);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+
+      flex-shrink: 0;
+    }
+
+    .logo img {
+      display: block;
+
+      width: auto;
+      height: 76px;
+
+      max-width: 225px;
+      object-fit: contain;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+
+      gap: 28px;
+
+      font-size: 14px;
+      font-weight: 500;
+      color: #3d3a35;
+    }
+
+    .menu a {
+      position: relative;
+      white-space: nowrap;
+
+      transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+    }
+
+    .menu a::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+
+      width: 0;
+      height: 1px;
+
+      background: var(--gold);
+
+      transition: width 0.25s ease;
+    }
+
+    .menu a:hover {
+      color: var(--gold);
+    }
+
+    .menu a:hover::after {
+      width: 100%;
+    }
+
+    .mobile-menu-button {
+      display: none;
+
+      width: 44px;
+      height: 44px;
+
+      border: 1px solid var(--line);
+      border-radius: 12px;
+
+      background: transparent;
+      color: var(--green);
+
+      cursor: pointer;
+    }
+
+    .mobile-menu-button span {
+      display: block;
+
+      width: 20px;
+      height: 2px;
+
+      margin: 4px auto;
+
+      border-radius: 10px;
+      background: currentColor;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+
+      padding-top: var(--header-height);
+
+      background:
+        linear-gradient(
+          rgba(16, 39, 30, 0.72),
+          rgba(16, 39, 30, 0.8)
+        ),
+        linear-gradient(135deg,#10271e,#234b39);
+
+      background-size: cover;
+      background-position: center;
+
+      color: var(--white);
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 960px;
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      margin-bottom: 24px;
+
+      color: var(--gold);
+
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Cormorant Garamond", serif;
+      line-height: 1.08;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+
+      font-size: clamp(52px, 7vw, 92px);
+      font-weight: 700;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 38px;
+
+      color: rgba(255, 255, 255, 0.88);
+
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 52px;
+      padding: 14px 28px;
+
+      border-radius: 999px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--green-dark);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      background: var(--gold-light);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      transform: translateY(-3px);
+
+      border-color: var(--white);
+      background: var(--white);
+      color: var(--green);
+    }
+
+    /* GENEL BÖLÜMLER */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 56px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 {
+      margin-top: 12px;
+
+      color: var(--green);
+
+      font-size: clamp(38px, 5vw, 62px);
+    }
+
+    /* HAKKINDA */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: center;
+
+      gap: 64px;
+    }
+
+    .portrait {
+      min-height: 520px;
+
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          rgba(24, 57, 43, 0.18),
+          rgba(24, 57, 43, 0.18)
+        ),
+        linear-gradient(135deg,#10271e,#234b39);
+
+      background-size: cover;
+      background-position: center;
+
+      box-shadow: 0 24px 80px rgba(24, 57, 43, 0.16);
+    }
+
+    .about-text p {
+      margin-bottom: 22px;
+
+      color: var(--muted);
+
+      font-size: 18px;
+    }
+
+    .read-more {
+      display: inline-block;
+
+      padding-bottom: 5px;
+
+      border-bottom: 1px solid var(--gold);
+
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    /* VAKFIMIZ */
+
+    .foundation {
+      padding-top: 30px;
+    }
+
+    .foundation-box {
+      padding: 55px;
+
+      border: 1px solid var(--line);
+      border-radius: 28px;
+
+      background: var(--white);
+    }
+
+    .foundation-box h2 {
+      margin-bottom: 20px;
+
+      color: var(--green);
+      font-size: clamp(36px, 4vw, 52px);
+    }
+
+    .foundation-box p {
+      max-width: 900px;
+
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* FAALİYETLER */
+
+    .activities {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+
+      background: #fffaf0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 26px;
+    }
+
+    .card {
+      padding: 38px;
+
+      border: 1px solid var(--line);
+      border-radius: 26px;
+
+      background: var(--white);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+
+      box-shadow: 0 22px 50px rgba(24, 57, 43, 0.1);
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 24px;
+
+      border-radius: 50%;
+
+      background: rgba(183, 154, 99, 0.14);
+      color: var(--gold);
+
+      font-size: 25px;
+    }
+
+    .card h3 {
+      margin-bottom: 14px;
+
+      color: var(--green);
+
+      font-size: 30px;
+    }
+
+    .card p {
+      color: var(--muted);
+
+      font-size: 15.5px;
+    }
+
+    /* SÖZ ALANI */
+
+    .quote {
+      padding: 120px 0;
+
+      background: var(--green);
+      color: var(--white);
+
+      text-align: center;
+    }
+
+    .quote blockquote {
+      max-width: 980px;
+      margin-inline: auto;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(36px, 5vw, 68px);
+      line-height: 1.16;
+    }
+
+    .quote p {
+      margin-top: 24px;
+
+      color: var(--gold);
+    }
+
+    /* GALERİ */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .gallery-item {
+      height: 310px;
+
+      overflow: hidden;
+
+      border-radius: 24px;
+
+      background: #e9e4dc;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    /* BAĞIŞ */
+
+    .donation {
+      background:
+        linear-gradient(
+          135deg,
+          var(--green-dark),
+          var(--green)
+        );
+
+      color: var(--white);
+    }
+
+    .donation-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      gap: 60px;
+    }
+
+    .donation h2 {
+      font-size: clamp(40px, 5vw, 64px);
+    }
+
+    .donation p {
+      margin-top: 20px;
+
+      color: rgba(255, 255, 255, 0.78);
+
+      font-size: 18px;
+    }
+
+    .iban {
+      padding: 32px;
+
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .iban small {
+      color: var(--gold);
+
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .iban strong {
+      display: block;
+
+      margin-top: 12px;
+
+      font-size: 20px;
+      word-break: break-word;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 70px 0 30px;
+
+      background: #0d1f18;
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr;
+
+      gap: 40px;
+
+      margin-bottom: 50px;
+    }
+
+    footer h4 {
+      margin-bottom: 18px;
+
+      color: var(--gold);
+
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    footer p,
+    footer a {
+      display: block;
+
+      margin-bottom: 10px;
+
+      color: rgba(255, 255, 255, 0.72);
+
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      padding-top: 24px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+      color: rgba(255, 255, 255, 0.55);
+
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* TABLET */
+
+    @media (max-width: 1050px) {
+      .menu {
+        gap: 18px;
+        font-size: 13px;
+      }
+
+      .logo img {
+        height: 68px;
+        max-width: 195px;
+      }
+    }
+
+    /* MOBİL */
+
+    @media (max-width: 860px) {
+      :root {
+        --header-height: 82px;
+      }
+
+      .nav {
+        min-height: var(--header-height);
+      }
+
+      .logo img {
+        height: 62px;
+        max-width: 180px;
+      }
+
+      .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 18px 4% 24px;
+
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+
+        background: rgba(248, 246, 242, 0.98);
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .menu a {
+        width: 100%;
+
+        padding: 12px 0;
+      }
+
+      .menu a::after {
+        display: none;
+      }
+
+      .mobile-menu-button {
+        display: block;
+        flex-shrink: 0;
+      }
+
+      .hero {
+        min-height: 92vh;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .about-grid,
+      .donation-box,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .portrait {
+        min-height: 400px;
+      }
+
+      .foundation-box {
+        padding: 36px 28px;
+      }
+
+      section {
+        padding: 78px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(92%, 1180px);
+      }
+
+      .logo img {
+        height: 56px;
+        max-width: 155px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .eyebrow {
+        letter-spacing: 3px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+
+        max-width: 320px;
+        margin-inline: auto;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 280px;
+      }
+
+      .portrait {
+        min-height: 340px;
+      }
+
+      .card {
+        padding: 30px;
+      }
+
+      .iban strong {
+        font-size: 16px;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="refinements.css?v=3">
+</head>
+
+<body><a class="skip-link" href="#main">İçeriğe geç</a><header>
+    <div class="container nav">
+
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="Törnüklü İbrahim Efendi Vakfı ana sayfa"
+      >
+        <img
+          src="logo.svg"
+          alt="Törnüklü İbrahim Efendi Vakfı logosu"
+        >
+      </a>
+
+      <nav
+        class="menu"
+        id="mainMenu"
+        aria-label="Ana menü"
+      >
+        <a href="hayat.html">Törnüklü İbrahim Efendi</a>
+        <a href="index.html#vakif">Vakfımız</a>
+        <a href="index.html#faaliyetler">Faaliyetler</a>
+        <a href="index.html#galeri">Galeri</a>
+        <a href="index.html#bagis">Bağış</a>
+        <a href="index.html#iletisim">İletişim</a>
+      </nav>
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="Menüyü aç"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header><main id="main"><section><div class="container"><div class="section-title"><h1 style="font-size:clamp(32px,5vw,48px);color:var(--green)">Fotoğraf kaynakları</h1></div><h2 style="font-size:28px">Sivas şehir meydanı</h2><p>Fotoğraf: Валерий Дед.</p><p><a class="support-link" href="https://commons.wikimedia.org/wiki/File:Sivas_meydan_2_-_panoramio.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons üzerindeki orijinal fotoğraf ↗</a></p><p><a class="support-link" href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">Creative Commons Atıf 3.0 (CC BY 3.0) lisansı ↗</a></p><p style="margin-top:20px">Fotoğraf, sayfa düzenine göre kırpılarak ve üzerine renk katmanı uygulanarak gösterilmiştir.</p><h2 style="font-size:28px;margin-top:40px">Vakıf faaliyetleri</h2><p>Faaliyet, ziyaret ve program fotoğrafları vakıf tarafından paylaşılan arşivden alınmıştır.</p><a class="support-link" href="index.html">← Ana sayfaya dön</a></div></section></main><footer id="iletisim"><div class="container"><div class="footer-grid"><div><h4>Vakfımız</h4><p>Törnüklü İbrahim Efendi Vakfı</p><p>İlim, irfan, ahlak ve hizmet mirasını geleceğe taşımak için.</p></div><div><h4>Keşfedin</h4><a href="hayat.html">Törnüklü İbrahim Efendi</a><a href="index.html#vakif">Vakfımız</a><a href="index.html#faaliyetler">Faaliyetler</a></div><div><h4>Katılın</h4><a href="index.html#gonullu">Gönüllü olun</a><a href="index.html#bagis">Bağış ve destek</a></div><div><h4>İletişim</h4><p>Sivas / Türkiye</p><a href="tel:+905374886618">+90 537 488 66 18</a><a href="https://wa.me/905374886618" target="_blank" rel="noopener noreferrer">WhatsApp ile iletişime geçin ↗</a><a href="https://www.instagram.com/ibrahim.efendi.vakfi" target="_blank" rel="noopener noreferrer">Instagram · ibrahim.efendi.vakfi ↗</a></div></div><div class="copyright">© 2026 Törnüklü İbrahim Efendi Vakfı. Tüm hakları saklıdır.<br><a class="photo-credit" href="fotograf-kaynaklari.html">Fotoğraf kaynakları</a></div></div></footer><script src="site.js?v=3" defer></script></body></html>
